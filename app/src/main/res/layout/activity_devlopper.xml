@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorTransparentWhite">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@+id/imgView_logo"
+            android:layout_width="133dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/second" />
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="match_parent"
+            android:layout_height="209dp"
+            android:layout_below="@+id/imgView_logo"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Se localiser"
+                android:textColor="@color/colorAccent"
+                android:textSize="23sp" />
+
+            <RelativeLayout
+                android:id="@+id/linlay1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@+id/tv_login"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Ville                         "
+                        android:textAllCaps="true"
+                        android:textColor="#424242"
+                        android:textSize="15sp" />
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spn1"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="4"
+                        android:autofillHints="sélectionner une ville" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Cartier                   "
+                        android:textAllCaps="true"
+                        android:textColor="#424242"
+                        android:textSize="15sp" />
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spn2"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="4"
+                        android:autofillHints="sélectionner un cartier"
+                        android:textAlignment="gravity"
+                        android:importantForAutofill="yes"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/buton"
+                    android:layout_width="189dp"
+                    android:layout_height="34dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:focusable="true"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/colorPrimary"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Recherche" />
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="540dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_chevron_left_black_24dp" />
+</RelativeLayout>
+

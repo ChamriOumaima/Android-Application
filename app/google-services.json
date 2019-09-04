@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "605032521912",
+    "firebase_url": "https://map-2018-b49bf.firebaseio.com",
+    "project_id": "map-2018-b49bf",
+    "storage_bucket": "map-2018-b49bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605032521912:android:5ca2c5843b7d1770",
+        "android_client_info": {
+          "package_name": "com.example.wildtechnologie.gpfemergency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605032521912-3oviol5el19qtcf1jnlsgp4rkaq6e3i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXeCd9uoGgH3K1gQxPOJe1zKP_3r04jF0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

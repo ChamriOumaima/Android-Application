@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GPFemergency</string>
+    <string name="title_activity_gpfmaps">Map</string>
+    <string name="title_activity_mapgpf">Map</string>
+    <string-array name="spinner">
+
+        <item>Faire un choix</item>
+
+        <item>Rabat</item>
+
+        <item>Mekens</item>
+
+        <item>Salé</item>
+
+    </string-array>
+    <string-array name="spn">
+
+        <item>Faire un choix</item>
+
+        <item>agdal</item>
+
+        <item>hay riad</item>
+
+        <item>manal</item>
+
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

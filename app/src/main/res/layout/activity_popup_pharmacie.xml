@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="475dp"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/gradelpopup"
+    android:backgroundTint="@color/colorPrimaryDark">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorTransparentWhite"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/cerclebackground"/>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="210dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="361dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/bestversion" />
+
+        <TextView
+            android:id="@+id/popupPharmacie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Pharmacie"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/VC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Ville et le cartie"
+            android:textColor="@color/colorTransparentWhite"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--LinearLayout
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/colorTransparentWhite"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cities"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradelpopup"
+            android:backgroundTint="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tel :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rue :"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/garde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garde"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/affiche"
+        android:layout_width="100dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/linlay1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/grad_bg"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="10dp"
+        android:onClick="toMap">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Localiser"
+            android:onClick="toMap"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
